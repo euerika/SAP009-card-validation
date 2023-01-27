@@ -10,14 +10,31 @@
 
 <main>
     <div class="container">
-        <h2>Vamos validar o seu cartão?!</h2>
-        <p>Digite somente o número do cartão:</p>
+        <div class="imagem"> <h1>Kit De Livros Infantis</h1>
+            <img src="img/Kit livro .png">
+            <p>Super kit de livros infantis direcionados<br>
+                para bebês/crianças (06 meses - 10 anos). <br>
+                Livros totalmente ilustrados que desenvolvem <br>
+                a linguagem, a ampliação de vocabulário, a <br>
+                criatividade e a descoberta do mundo imaginário.</p>
+        </div>
+        
+        
 
-        <section class="form">
+        <div class="form">
+            <h2>Vamos validar a sua compra?!</h2>
+            <p>DIGITE O NÚMERO DO CARTÃO</p>
             <input class="getNumberClass" type="text" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX" id="numero-cartao">
+            <p>NOME COMPLETO</p>
+            <input class="name" type="text" placeholder="Digite seu nome" required><br>
+            
+            <input class="MesAno" type="number">
+            <option>MÊS</option>
+            <select>01</select>
+            <select>02</select>
             <button id="btn-validar">Validar</button>
             <label id="resultado"></label>
-        </section>
+        </div>
     </div>
     <script type="module" src="./index.js"></script>
 </main>

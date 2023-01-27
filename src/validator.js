@@ -1,8 +1,8 @@
-export function ehValido(numeroCartao) {
+export function ehValido (numeroCartao) {
   const arrayNumeroCartao = numeroCartao.split("").reverse();
-  let soma = 0;
+  let soma = 0; 
 
-  // 1°E variavel de controle; 2° lógica de loop (até for verdade); 3° incremento da variavel de controle
+  // 1° É variável de controle; 2° lógica de loop (até for verdade); 3° incremento da variavel de controle
   for (let i = 0; i < arrayNumeroCartao.length; i = i + 1) {
     console.log("indice", i, arrayNumeroCartao[i]);
 
@@ -25,3 +25,17 @@ export function ehValido(numeroCartao) {
     return false;
   }
 }
+// Funcão para Maskify
+
+function maskify (numeroCartao) {                
+    let maskify = [];                                                   
+  for (let i = 0; i < numeroCartao.length; i++) {                           
+    if (i < numeroCartao.length - 4) {                                       
+      maskify.push("#");                                              
+    } else {
+      maskify.push(numeroCartao[i])
+    }
+  }
+  return maskify.join("");
+}                                      
+    
