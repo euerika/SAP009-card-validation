@@ -17,6 +17,6 @@ function validar() {
 const btn = document.getElementById("btn-validar");
 btn.addEventListener("click", validar);
 
-function maskify(numeroCartao) {                                                         
+function maskify(numeroCartao) {                                                    
   return validator.maskify(numeroCartao);
 }

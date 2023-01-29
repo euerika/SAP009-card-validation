@@ -10,32 +10,47 @@
 
 <main>
     <div class="container">
-        <div class="imagem"> <h1>Kit De Livros Infantis</h1>
+        <div class="imagem">
+            <h1>KIT DE LIVROS INFANTIS</h1>
             <img src="img/Kit livro .png">
-            <p>Super kit de livros infantis direcionados<br>
-                para bebês/crianças (06 meses - 10 anos). <br>
-                Livros totalmente ilustrados que desenvolvem <br>
-                a linguagem, a ampliação de vocabulário, a <br>
-                criatividade e a descoberta do mundo imaginário.</p>
+            <p>Super kit de livros infantis direcionados
+                para bebês/crianças (06 meses - 10 anos).
+                Livros totalmente ilustrados que desenvolvem
+                a linguagem, a ampliação de vocabulário, a
+                criatividade e a descoberta do mundo imaginário.
+            </p>
         </div>
-        
-        
 
         <div class="form">
             <h2>Vamos validar a sua compra?!</h2>
+          <label>
             <p>DIGITE O NÚMERO DO CARTÃO</p>
-            <input class="getNumberClass" type="text" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX" id="numero-cartao">
+            <input class="getNumberClass" type="text" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX" id="numero-cartao" onkeypress="return event.charCode >= 48 && event.charCode<=57" required>
+          </label>
+
+            <Label>
             <p>NOME COMPLETO</p>
-            <input class="name" type="text" placeholder="Digite seu nome" required><br>
+            <input class="name" type="text" placeholder="Digite seu nome" id="nome-cartao" required>
+            </label>           
+
+          
+                <div class="mes-ano" >
+               <span> MES/ANO</span>
+                <input class="validade" id="mesAno" type="text" maxlength="5" placeholder="00/00">               
             
-            <input class="MesAno" type="number">
-            <option>MÊS</option>
-            <select>01</select>
-            <select>02</select>
-            <button id="btn-validar">Validar</button>
-            <label id="resultado"></label>
+                <span>CVV</span>
+                <input class="cvv" id=codigo-segurança type="text" maxlength="3" placeholder="cvv">                
+                </div> 
+
+           
+            <button id="btn-validar">VALIDAR</button>   
+            <div>            
+        <label id="resultado"></label>
+            </div>    
         </div>
     </div>
+
+    <p>By: ERIKA SOARES DOS SANTOS </p>
     <script type="module" src="./index.js"></script>
 </main>
 
