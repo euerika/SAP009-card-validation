@@ -23,34 +23,32 @@
 
         <div class="form">
             <h2>Vamos validar a sua compra?!</h2>
-          <label>
-            <p>DIGITE O NÚMERO DO CARTÃO</p>
-            <input class="getNumberClass" type="text" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX" id="numero-cartao" onkeypress="return event.charCode >= 48 && event.charCode<=57" required>
-          </label>
+            <label>
+                <p>DIGITE O NÚMERO DO CARTÃO</p>
+                <input class="getNumberClass" type="text" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX" id="numero-cartao" onkeypress="return event.charCode >= 48 && event.charCode<=57" required>
+            </label>
 
             <label>
-            <p>NOME COMPLETO</p>
-            <input class="name" type="text" placeholder="Digite seu nome" id="nome-cartao" required>
-            </label>           
+                <p>NOME COMPLETO</p>
+                <input class="name" type="text" placeholder="Digite seu nome" id="nome-cartao" required>
+            </label>
 
-          
-                <div class="mes-ano" >
-               <span> MES/ANO</span>
-                <input class="validade" id="mesAno" type="text" maxlength="5" placeholder="00/00">               
-            
+            <div class="mes-ano">
+                <span> MES/ANO</span>
+                <input class="validade" id="mesAno" type="text" maxlength="5" placeholder="00/00">
                 <span>COD. SEG</span>
-                <input class="cvv" id="codigo-segurança" type="text" maxlength="3" placeholder="cvv">                
-                </div> 
+                <input class="cvv" id="codigo-segurança" type="text" maxlength="3" placeholder="cvv">
+            </div>
 
-           
-            <button id="btn-validar">VALIDAR</button>   
-            <div>            
-        <label id="resultado"></label>
-            </div>    
+            <button id="btn-validar">VALIDAR</button>
+            <div>
+                <label id="resultado"></label>
+            </div>
         </div>
     </div>
 
     <p>By: ERIKA SOARES DOS SANTOS </p>
     <script type="module" src="./index.js"></script>
 </main>
+
 </html>

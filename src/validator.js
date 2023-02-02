@@ -1,42 +1,43 @@
 const validator = {
-  isValid(numeroCartao) {
-    const arrayNumeroCartao = numeroCartao.split("").reverse();
+  isValid: function isValid(numeroCartao) {
+    const arrayNumeroCartao = numeroCartao.split("").map(Number);
+    const reverseNumeroCartao = arrayNumeroCartao.reverse();
     let soma = 0;
+    for (let i = 0; i < reverseNumeroCartao.length; i++) {
+      console.log("teste1");
 
-    // 1° É variável de controle; 2° lógica de loop (até for verdade); 3° incremento da variavel de controle
-    for (let i = 0; i < arrayNumeroCartao.length; i = i + 1) {
-      // console.log("indice", i, arrayNumeroCartao[i]);
+      if ((i + 1) % 2 === 0) {
+        const numerosMult = reverseNumeroCartao[i] * 2;
+        console.log("teste2");
 
-      if (i % 2 === 0) {
-        // pega o numero que esta na posição i e * por 2 e guarda na constante dobro
-        const dobro = arrayNumeroCartao[i] * 2;
-        if (dobro > 9) {
-          soma = soma + (dobro - 9);
-        } else {
-          soma = soma + dobro;
-        }
+        if (numerosMult < 10) {
+          soma += numerosMult;
+          console.log("teste3");
+        } else if (numerosMult >= 10) soma += numerosMult - 9;
+        console.log("teste4");
       } else {
-        soma + soma + arrayNumeroCartao[i];
+        soma += parseInt(arrayNumeroCartao[i]);
       }
+      console.log("teste 5");
     }
-    // Função para Validar o Cartão
+    // Função para validar o cartão. (Se a soma for divisivel por 10 com rsto zero)
     if (soma % 10 === 0) {
       return true;
     } else {
       return false;
     }
   },
-
-  mascCard(numeroCartao) {
-    const maskify = [];
-    for (let i = 0; i < numeroCartao.length; i = i + 1) {
+  maskify: function maskify(numeroCartao) {
+    const maskCard = [];
+    for (let i = 0; i < numeroCartao.length; i++) {
       if (i < numeroCartao.length - 4) {
-        maskify.push("#");
+        maskCard.push("#");
       } else {
-        maskify.push(numeroCartao[i]);
+        maskCard.push(numeroCartao[i]);
       }
     }
-    const mascarado = maskify.join("");
-    return mascarado;
+    const maskNumber = maskCard.join("");
+    return maskNumber;
   },
 };
+export default validator;

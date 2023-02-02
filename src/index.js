@@ -1,25 +1,21 @@
-import { isValid, mascCard } from "./validator.js";
-
+import validator from "./validator.js";
+const resultado = document.getElementById("resultado");
+const botao = document.getElementById("btn-validar");
+botao.addEventListener("click", validar);
 function validar() {
-  const inputNumeroCartao = document.getElementById("numero-cartao");
-  const numeroCartao = inputNumeroCartao.value;
-  const cartaoEhValido = isValid(numeroCartao);
-  const resultado = document.getElementById("resultado");
-  // console.log(resultado);
-  const maskify = mascCard(numeroCartao);
-  console.log("teste", maskify);
+  const numeroCartao = document.getElementById("numero-cartao").value;
+  const soma = validator.isValid(numeroCartao);
+  const maskNumbers = validator.maskify(numeroCartao);
+  console.log(maskNumbers);
 
   if (numeroCartao === "") {
-    resultado.innerHTML = "Digite um número";
-  } else if (cartaoEhValido === true) {
-    resultado.innerHTML = "Cartão Válido";
+    resultado.innerHTML = "Digite um número por favor!";
+  } else if (numeroCartao.length < 13) {
+    resultado.innerHTML = "bananinha";
+  } else if (soma === true) {
+    resultado.innerHTML = "Cartão Válido!" + maskNumbers;
   } else {
     resultado.innerHTML = "Cartão Inválido";
   }
 }
-const btn = document.getElementById("btn-validar");
-btn.addEventListener("click", validar);
-
-function mascCard(numeroCartao) {
-  return mascCard(numeroCartao);
-}
+console.log(validator);
