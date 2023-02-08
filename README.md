@@ -1,5 +1,4 @@
-# CARD VALIDATION - Validação de cartão de crédito
-
+# CARD VALIDATION 
 Página Web de livros infantis que permite ao usuário validar seu cartão de crédito simulanado a área de pagamento de uma loja virtual.
 Projeto #1 do Bootcamp Laboratoria.
 
