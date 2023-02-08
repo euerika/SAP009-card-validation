@@ -1,6 +1,7 @@
 # CARD VALIDATION 
 Página Web de livros infantis que permite ao usuário validar seu cartão de crédito simulanado a área de pagamento de uma loja virtual.
 Projeto #1 do Bootcamp Laboratoria.
+[Acesse aqui](https://euerika.github.io/SAP009-card-validation/)
 
 ## Índice
 
