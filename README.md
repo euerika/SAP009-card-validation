@@ -80,7 +80,7 @@ A tela de interação foi criada em tons pasteis
 ## 6. Autora
 
 <div>
-   <img alt="Erika Soares dos Santos" widtht="150" src="Erika Soares dos Santos" height="150"  src="https://user-images.githubusercontent.com/109056305/217401080-8b2dff1e-f6c4-4b62-96bc-d79ee4c88e60.jpeg">
+   <img height="150" widtht="150" style="border-radius:5px;" src="https://user-images.githubusercontent.com/109056305/217401080-8b2dff1e-f6c4-4b62-96bc-d79ee4c88e60.jpeg">
 </div>
 
 
