@@ -84,7 +84,8 @@ A tela de interação foi criada em tons pasteis
 </div>
 
 
-🔗[Desenvolvido por Erika Soares dos Santos]("https://github.com/euerika/SAP009-card-validation")<br>
+[Desenvolvido por Erika Soares dos Santos]("https://github.com/euerika/SAP009-card-validation")<br>
+
 **Projeto do Bootcamp Laboratoria**
 
  
