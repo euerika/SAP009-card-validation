@@ -1,5 +1,5 @@
 # CARD VALIDATION 
-Página Web de livros infantis que permite ao usuário validar seu cartão de crédito simulanado a área de pagamento de uma loja virtual.
+Página Web de livros infantis que permite ao usuário validar seu cartão de crédito simulando a área de pagamento de uma loja virtual.
 Projeto #1 do Bootcamp Laboratoria.
 [Acesse aqui](https://euerika.github.io/SAP009-card-validation/)
 
@@ -45,7 +45,7 @@ Foi feito um protótipo de baixa fidelidade realizada em papel e lápis.
 
 ## 4. Tela de interação
 
-A tela de interação foi criada em tons pasteis 
+A tela de interação foi criada em tons pasteis, textos e bordas arrendondadas.
 
 1. Tela Capturada do Projeto
 
@@ -59,7 +59,7 @@ A tela de interação foi criada em tons pasteis
 
 ![complete](https://user-images.githubusercontent.com/109056305/217069470-81ddf362-697d-4ab0-8df1-c54a6962d28e.jpg)
 
-4. Quando o cartão for válido aparecerá menssagem de cartão válido e os números mascarados exceto os últimos 4.
+4. Quando o cartão for válido aparecerá mensagem de cartão válido e os números mascarados exceto os últimos 4.
 
 ![cartao valido](https://user-images.githubusercontent.com/109056305/217069467-f9083277-40ba-4838-8cd1-644ada9a7395.jpg)
 
