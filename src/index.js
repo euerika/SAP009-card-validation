@@ -9,13 +9,13 @@ function validar() {
   const soma = validator.isValid(numeroCartao);
   const maskNumbers = validator.maskify(numeroCartao);
 
-  if (numeroCartao === "") {
-    resultado.innerHTML = "Digite um número por favor!";
+  if (!numeroCartao) {
+    return resultado.innerHTML = "Digite um número por favor!";
   } else if (numeroCartao.length < 13) {
-    resultado.innerHTML = "Complete os números, por favor!";
-  } else if (soma === true) {
-    resultado.innerHTML = "Cartão Válido! " + maskNumbers;
-  } else {
-    resultado.innerHTML = "Cartão Inválido! Tente novamente.";
-  }
+    return resultado.innerHTML = "Complete os números, por favor!";
+  } else if (soma) {
+    return resultado.innerHTML = "Cartão Válido! " + maskNumbers;
+  } 
+  return resultado.innerHTML = "Cartão Inválido! Tente novamente.";
+  
 }

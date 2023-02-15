@@ -8,7 +8,7 @@ const validator = {
     let soma = 0;
     //1° É variável de controle; 2° lógica de loop (até for verdade); 3° incremento da variavel de controle;
     for (let i = 0; i < reverseNumeroCartao.length; i++) {
-      //// pega o numero que esta na posição i soma + 1, pega o valor resto da divisão e * por 2 e guarda na constante numerosMult
+      //// pega o numero que esta na posição i soma + 1, pega o valor do resto da divisão e * por 2 e guarda na constante numerosMult
       if ((i + 1) % 2 === 0) {
         const numerosMult = reverseNumeroCartao[i] * 2;
 
@@ -29,6 +29,7 @@ const validator = {
   //função para mascarar os números
   maskify: function maskify(numeroCartao) {
     const maskCard = [];
+    
     for (let i = 0; i < numeroCartao.length; i++) {
       if (i < numeroCartao.length - 4) {
         maskCard.push("#");
